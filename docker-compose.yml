@@ -1,0 +1,127 @@
+version: '2'
+services:
+  mongodb1: 
+    container_name: mongodb1
+    command: /usr/bin/mongod --replSet rs --journal --smallfiles --rest
+    hostname: mongodb1
+    image: mongo
+    links: 
+      - mongodb2
+      - mongodb3
+    ports: 
+      - "27017:27017"
+      - "28017:28017"
+    restart: always
+  
+  mongodb2: 
+    container_name: mongodb2
+    command: /usr/bin/mongod --replSet rs --journal --smallfiles --rest
+    hostname: mongodb2
+    image: mongo
+    ports: 
+      - "27018:27017"
+      - "28018:28017"
+    restart: always
+  
+  mongodb3: 
+    container_name: mongodb3
+    command: /usr/bin/mongod --replSet rs --journal --smallfiles --rest
+    hostname: mongodb3
+    image: mongo
+    ports: 
+      - "27019:27017"
+      - "28019:28017"
+    restart: always
+
+  # This configures the MongoDB replicaset
+  mongosetup:
+    image: mongo
+    container_name: mongosetup
+    hostname: mongosetup
+    links:
+      - mongodb1:mongodb1
+      - mongodb2:mongodb2
+      - mongodb3:mongodb3
+    volumes:
+      - ./scripts:/scripts
+    entrypoint: [ "/scripts/setup.sh" ]
+
+  loaddata:
+    image: mongo
+    container_name: loaddata
+    hostname: loaddata
+    volumes:
+      - ./scripts:/scripts
+    command: bash -c "chmod +x /scripts/*.sh && sh /scripts/import-data.sh"
+    links:
+      - mongodb1:mongodb1
+    depends_on:
+      - mongodb1
+      - elasticsearch
+
+
+  # Make sure ES does not rellocate it's shards when it has low disk space.
+  disabledisktreshold:
+    image: mongo
+    container_name: disabledisktreshold
+    hostname: disabledisktreshold
+    links:
+      - elasticsearch:elasticsearch
+    volumes:
+      - ./scripts:/scripts
+    entrypoint: [ "/scripts/disable-disk-treshold.sh" ]
+
+  # Verify reading and writing
+  # Run 'docker logs -f elasticmongo_verify_1' to see what it outputs.
+  verify:
+    image: mongo
+    container_name: verify
+    hostname: verify
+    links:
+      - mongodb1:mongodb1
+      - mongodb2:mongodb2
+      - mongodb3:mongodb3
+      - elasticsearch:elasticsearch
+    volumes:
+      - ./scripts:/scripts
+    entrypoint: [ "/scripts/query.sh" ]
+
+  elasticsearch:
+    hostname: elasticsearch
+    container_name: elasticsearch
+    image: elasticsearch
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    links:
+      - mongodb1:mongodb1
+      - mongodb2:mongodb2
+      - mongodb3:mongodb3
+    volumes:
+      - ./elasticsearch/logging.yml:/etc/elasticsearch/logging.yml
+    restart: always
+
+  mongoconnector:
+      hostname: mongoconnector
+      container_name: mongoconnector
+      build: ./mongo-connector
+      links:
+        - mongodb3
+        - elasticsearch
+      volumes:
+        - ./scripts:/scripts
+      command: bash -c "chmod +x /scripts/*.sh && sh /scripts/configure-mongo-conector.sh"
+      depends_on:
+        - mongodb3
+        - loaddata
+        - elasticsearch
+
+  kibana:
+    hostname: kibana
+    container_name: kibana
+    image: kibana
+    ports:
+      - "5601:5601"
+    links:
+      - elasticsearch:elasticsearch
+    restart: always

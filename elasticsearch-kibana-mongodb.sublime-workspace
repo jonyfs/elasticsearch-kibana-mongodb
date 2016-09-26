@@ -1,0 +1,358 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 0,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "docker-compose.yml",
+			"settings":
+			{
+				"buffer_size": 1883,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "elasticsearch/logging.yml",
+			"settings":
+			{
+				"buffer_size": 2052,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/jony/Documents/repositorios/FiscalCloud/docker/docker-compose-mongodb-replicaset.yml",
+			"settings":
+			{
+				"buffer_size": 4325,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 247.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"space",
+				"Indentation: Convert to Spaces"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/jony/Documents/repositorios/elasticsearch-kibana-mongodb"
+	],
+	"file_history":
+	[
+		"/Users/jony/Documents/repositorios/spring-boot-mongodb-hadoop/docker-compose.yml",
+		"/Users/jony/Documents/repositorios/FiscalCloud/environment/test/env.properties",
+		"/Users/jony/Documents/repositorios/FiscalCloud/environment/producao/env.properties",
+		"/Users/jony/Documents/repositorios/FiscalCloud/environment/local/env.properties",
+		"/Users/jony/Documents/repositorios/FiscalCloud/environment/docker-test/env.properties",
+		"/Users/jony/Documents/repositorios/FiscalCloud/environment/demo/env.properties",
+		"/Users/jony/Downloads/NFe22160607238771000756650010000063741000063747proc.xml",
+		"/Users/jony/Downloads/wladmir.json",
+		"/Users/jony/Documents/repositorios/FiscalCloud/environment/local-docker-dev/env.properties",
+		"/Users/jony/Documents/repositorios/FiscalCloud/environment/docker-dev/env.properties",
+		"/Users/jony/Documents/repositorios/spring.boot.mongodb.thymeleaf/README.md",
+		"/Users/jony/Documents/repositorios/FiscalCloud/fiscalcloud-api/src/test/java/br/com/bematech/fiscalcloud/api/controller/DocumentoFiscalControllerIntegrationTests.java",
+		"/Users/jony/Documents/repositorios/bestprice/bestprice-core/src/main/java/com/bestprice/core/document/PriceHistoryComparator.java",
+		"/Users/jony/Documents/repositorios/bestprice/bestprice-core/src/main/java/com/bestprice/core/document/PriceHistory.java",
+		"/Users/jony/Downloads/sonar.project.properties",
+		"/Users/jony/Documents/repositorios/bestprice/bestprice-core/src/main/java/com/bestprice/core/document/Product.java",
+		"/Users/jony/Documents/FiscalCloud/fiscalcloud-sefaz/pom.xml",
+		"/Users/jony/Documents/FiscalCloud/docker/instalacao_docker.txt",
+		"/Users/jony/Documents/FiscalCloud/docker/servidores.txt",
+		"/Users/jony/Documents/FiscalCloud/environment/local-docker-dev/env.properties",
+		"/Users/jony/Documents/FiscalCloud/environment/producao/env.properties"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\""
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\\\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "docker-compose.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1883,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								843,
+								843
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 237.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "elasticsearch/logging.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2052,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2052,
+								2052
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 12.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/jony/Documents/repositorios/FiscalCloud/docker/docker-compose-mongodb-replicaset.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4325,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								931
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "elasticsearch-kibana-mongodb.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

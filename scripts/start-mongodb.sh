@@ -1,0 +1,1 @@
+/usr/bin/mongod --replSet rs --journal --smallfiles --rest
